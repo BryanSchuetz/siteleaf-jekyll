@@ -1,22 +1,12 @@
 <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title without-underline" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-      </a>
-
-      <div class="trigger">
+    <h1><a class="site-title without-underline" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <nav class="cf">
+      <ul class="nav-list">
         {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% if page.layout == "page" %}
+            <li><a class="without-underline" href="{{ page.url }}">{{ page.title | upcase }}</a></li>
           {% endif %}
         {% endfor %}
-      </div>
+      </ul>
     </nav>
-
-  </div>
-
 </header>

@@ -1,3 +1,27 @@
+// 🎌Use the web-font loader to hide the flash of unstyled text—if Google fonts goes down, serve the next font in the stack🎌
+
+body{
+  visibility: hidden;
+}
+.wf-inactive body{
+  visibility: visible;
+  font-family: 'Merriweather', Georgia, serif;
+  h1, h2, h3, h4{
+    font-family: 'Archivo Narrow', Georgia, sans-serif;
+  }
+}
+.wf-active body{
+  visibility: visible;
+  font-family: 'Merriweather', Georgia, serif;
+  h1, h2, h3, h4{
+    font-family: 'Archivo Narrow', Georgia, sans-serif;
+  }
+}
+
+// 🎌Navigational Links🎌
+
+
+// 🎌Content Links🎌
 
 a{
   text-decoration: none;

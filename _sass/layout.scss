@@ -20,3 +20,17 @@
     @include width(14);
   }
 }
+
+// 🎌The Header🎌
+
+/*Navigation*/
+.nav-list{
+  list-style-type: none;
+  padding-left: 0;
+
+  li{
+    display: block;
+    float: left;
+    margin-right: 1rem;
+  }
+}
