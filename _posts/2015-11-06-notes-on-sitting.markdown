@@ -1,6 +1,6 @@
 ---
 title: Notes on Sitting
-date: 2015-11-06 13:33:57 Z
+date: 2015-11-06 08:33:57 -05:00
 categories:
 - Sitting
 - Beginners Mind
