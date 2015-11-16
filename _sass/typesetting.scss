@@ -2,6 +2,7 @@
 
 body{
   visibility: hidden;
+  line-height: 1.5rem;
 }
 .wf-inactive body{
   visibility: visible;
@@ -17,7 +18,17 @@ body{
     font-family: 'Archivo Narrow', Georgia, sans-serif;
   }
 }
-
+nav a{
+  font-family: 'Archivo Narrow', Georgia, sans-serif;
+}
+nav a:hover{
+  border-bottom: 2px solid $links;
+}
+.page-title{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+}
 // 🎌Navigational Links🎌
 
 
@@ -25,9 +36,13 @@ body{
 
 a{
   text-decoration: none;
-  color: black;
+  color: $links;
 }
 a:not(.without-underline){
-  color: blue;
+  color: $links;
   @include fancyUnderline();
+}
+a:not(.without-underline):hover{
+  background-size: 2px 2px;
+  color: darken($links, 10%);
 }

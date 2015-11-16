@@ -1,12 +1,12 @@
 <header class="site-header">
-    <h1><a class="site-title without-underline" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-    <nav class="cf">
-      <ul class="nav-list">
-        {% for page in site.pages %}
-          {% if page.layout == "page" %}
-            <li><a class="without-underline" href="{{ page.url }}">{{ page.title | upcase }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
+  <nav class="cf">
+    <ul class="nav-list">
+      {% for page in site.pages %}
+        {% if page.layout == "page" %}
+          <li><a class="without-underline" href="{{ page.url }}">{{ page.title | upcase }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  <h1 class="page-title"><a class="site-title without-underline" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 </header>
