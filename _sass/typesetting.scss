@@ -22,12 +22,21 @@ nav a{
   font-family: 'Archivo Narrow', Georgia, sans-serif;
 }
 nav a:hover{
-  border-bottom: 2px solid $links;
+  border-bottom: 2px solid $blue;
 }
 .page-title{
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
   text-align: center;
   font-size: 4rem;
   font-weight: 400;
+  background-color: $red;
+  padding: 3rem;
+  border-radius: .3rem;
+  a{
+    color: white;
+  }
 }
 // 🎌Navigational Links🎌
 
@@ -36,13 +45,13 @@ nav a:hover{
 
 a{
   text-decoration: none;
-  color: $links;
+  color: $blue;
 }
 a:not(.without-underline){
-  color: $links;
+  color: $blue;
   @include fancyUnderline();
 }
 a:not(.without-underline):hover{
   background-size: 2px 2px;
-  color: darken($links, 10%);
+  color: darken($blue, 10%);
 }
