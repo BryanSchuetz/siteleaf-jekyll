@@ -5,6 +5,8 @@ layout: default
 <div class="home">
   {% for post in site.posts | limit:1%}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.content }}</p>
+    <p>{{ post.excerpt }}</p>
+    <p class="more"><a  class="without-underline" href="{{ post.url }}"><svg class="more--icon" viewBox="0 0 157 157" preserveAspectRatio="xMinYMax meet"><use xlink:href="#more"></use></svg> Read More</a></p>
+    <hr>
   {% endfor %}
 </div>

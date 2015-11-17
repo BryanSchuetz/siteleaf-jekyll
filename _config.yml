@@ -2,6 +2,11 @@
 title: Siteleaf/Jekyll
 url: http://siteleaf-jekyll.siteleaf.net
 timezone: America/New_York
+hilighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 collections:
   uploads:
     title: Uploads
@@ -12,7 +17,7 @@ exclude:
 - ".gitignore"
 description: |
   Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-baseurl: 
+baseurl:
 destination: "./build"
 sass:
   style: compressed

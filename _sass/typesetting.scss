@@ -18,6 +18,9 @@ body{
     font-family: 'Archivo Narrow', Georgia, sans-serif;
   }
 }
+.svg{
+  fill: currentColor;
+}
 nav a{
   font-family: 'Archivo Narrow', Georgia, sans-serif;
 }
@@ -54,6 +57,18 @@ nav a:hover{
   a{
     color: white;
   }
+}
+.highlighter-rouge{
+  background-color: #2C3644;
+  margin: 2rem;
+  padding: 1rem;
+  code{
+    word-wrap: break-word;
+  }
+}
+hr{
+  border: none;
+  border-bottom: 1px solid $red;
 }
 // 🎌Navigational Links🎌
 
