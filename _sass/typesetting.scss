@@ -2,7 +2,7 @@
 
 body{
   visibility: hidden;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 .wf-inactive body{
   visibility: visible;
@@ -14,7 +14,7 @@ body{
 .wf-active body{
   visibility: visible;
   font-family: 'Merriweather', Georgia, serif;
-  h1, h2, h3, h4{
+    h2, h3, h4{
     font-family: 'Archivo Narrow', Georgia, sans-serif;
   }
 }
@@ -26,10 +26,25 @@ nav a:hover{
 }
 .page-title{
   display: block;
-  width: 80%;
   margin: 2rem auto;
   text-align: center;
-  font-size: 4rem;
+  font-size: 1.6rem;
+  letter-spacing: .05em;
+    text-shadow: 4px 4px 0px $red, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  @include responsive(small-screens){
+    font-size: 1.8rem;
+  }
+  @include responsive(medium-screens){
+    font-size: 3rem;
+  }
+  @include responsive(wide-screens){
+    font-size: 5rem;
+    padding: 4rem;
+  }
+  @include responsive(ultra-wide-screens){
+    font-size: 6rem;
+    padding: 5rem;
+  }
   font-weight: 400;
   background-color: $red;
   padding: 3rem;
@@ -49,6 +64,7 @@ a{
 }
 a:not(.without-underline){
   color: $blue;
+  font-weight: bold;
   @include fancyUnderline();
 }
 a:not(.without-underline):hover{
