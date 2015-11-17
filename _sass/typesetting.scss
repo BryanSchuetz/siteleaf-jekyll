@@ -30,16 +30,18 @@ nav a:hover{
   text-align: center;
   font-size: 1.6rem;
   letter-spacing: .05em;
-    text-shadow: 4px 4px 0px $red, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 0px $red, 3.5px 3.5px 0px rgba(0, 0, 0, 0.2);
   @include responsive(small-screens){
     font-size: 1.8rem;
   }
   @include responsive(medium-screens){
     font-size: 3rem;
+    text-shadow: 3px 3px 0px $red, 4px 4px 0px rgba(0, 0, 0, 0.2);
   }
   @include responsive(wide-screens){
     font-size: 5rem;
     padding: 4rem;
+    text-shadow: 4px 4px 0px $red, 7px 7px 0px rgba(0, 0, 0, 0.2);
   }
   @include responsive(ultra-wide-screens){
     font-size: 6rem;
