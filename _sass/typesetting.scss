@@ -71,13 +71,28 @@ hr{
   border-bottom: 1px solid $red;
 }
 // 🎌Navigational Links🎌
-
-
+.more a{
+  font-family: 'Archivo Narrow', Georgia, sans-serif;
+}
+// 🎌Content🎌
+.post-details{
+  font-family: 'Archivo Narrow', Georgia, sans-serif;
+  span{
+    padding: .2rem .4rem;
+    background-color: $red;
+    color: white;
+    border-radius: .1rem;
+    margin-right: .5rem;
+  }
+}
 // 🎌Content Links🎌
 
 a{
   text-decoration: none;
   color: $blue;
+}
+a:hover{
+  color: darken($blue, 10%);
 }
 a:not(.without-underline){
   color: $blue;
