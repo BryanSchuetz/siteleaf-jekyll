@@ -1,7 +1,7 @@
 ---
 title: Siteleaf/Jekyll
 url: http://siteleaf-jekyll.siteleaf.net
-timezone: America/DC
+timezone: America/New_York
 collections:
   uploads:
     title: Uploads
