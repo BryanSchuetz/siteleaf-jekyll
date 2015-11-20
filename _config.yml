@@ -1,5 +1,7 @@
 ---
 title: Siteleaf/Jekyll
+paginate: 1
+paginate_path: "/page:num/"
 url: http://siteleaf-jekyll.siteleaf.net
 timezone: America/New_York
 collections:
@@ -17,7 +19,7 @@ exclude:
 - ".gitignore"
 description: |
   Write an awesome description for your new site here.
-baseurl: 
+baseurl:
 destination: "./build"
 sass:
   style: compressed

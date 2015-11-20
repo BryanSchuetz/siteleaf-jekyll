@@ -1,9 +1,10 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="home">
-  {% for post in site.posts | limit:4 %}
+  {% for post in paginator.posts %}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="post-details">Categories:
       {% for category in post.categories %}<span class="post-category">{{ category | capitalize }}</span>{% endfor %}</p>
@@ -11,4 +12,17 @@ layout: default
     <p class="more"><a  class="without-underline" href="{{ post.url }}"><svg class="more--icon" viewBox="0 0 157 157" preserveAspectRatio="xMinYMax meet"><use xlink:href="#more"></use></svg> READ MORE</a></p>
     <hr>
   {% endfor %}
+  <div class="pagination cf">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next without-underline">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a  href="{{ paginator.previous_page_path }}" class="previous without-underline">Newer</a>
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
+</div>
+<p class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</p>
 </div>
