@@ -38,9 +38,10 @@ nav a:hover{
   margin: 2rem auto;
   text-align: center;
   font-family: 'Merriweather', Georgia, serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: .05em;
   text-shadow: 2px 2px 0px $red, 3.5px 3.5px 0px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
   @include responsive(small-screens){
     font-size: 1.8rem;
   }

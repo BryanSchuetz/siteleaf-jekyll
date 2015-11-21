@@ -6,7 +6,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-paginate: 1
+paginate: 5
 paginate_path: "/page:num/"
 hilighter: rouge
 markdown: kramdown
@@ -19,7 +19,7 @@ exclude:
 - ".gitignore"
 description: |
   Write an awesome description for your new site here.
-baseurl: 
+baseurl:
 destination: "./build"
 sass:
   style: compressed

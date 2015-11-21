@@ -58,12 +58,23 @@
   font-family: 'Archivo Narrow';
   span, a{
     display: inline-block;
-    padding: 1rem 3rem;
-    border: 2px solid $red;
+    padding: 1rem 1rem;
+    @include responsive(medium-screens){
+      padding: 1rem 3rem;
+    }
     text-align: center;
     text-decoration: none;
     border-radius: .2rem;
   }
+}
+.pagination a{
+  border: 2px solid $blue;
+  a:hover{
+    border: 2px solid darken($blue, 10%);
+  }
+}
+.pagination span{
+  border: 2px solid black;
 }
 .previous{
 float: right;
