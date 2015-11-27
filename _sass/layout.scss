@@ -54,13 +54,15 @@
 }
 // 🎌Pagination🎌
 .pagination{
-  margin: 2rem auto;
+  margin: 4rem auto 1rem auto;
   font-family: 'Archivo Narrow';
+  padding: .5rem;
+  background-color: lighten($gray, 30%);
   span, a{
     display: inline-block;
     padding: 1rem 1rem;
     @include responsive(medium-screens){
-      padding: 1rem 3rem;
+      padding: 1rem 2rem;
     }
     text-align: center;
     text-decoration: none;
