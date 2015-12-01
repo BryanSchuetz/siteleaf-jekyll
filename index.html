@@ -4,10 +4,11 @@ title: Home
 ---
 
 <div class="home">
-  {% for post in site.news %}
+  {% assign news = site.news | sort: 'date' | reverse %}
+  {% for post in news %}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="post-details">Categories:
-      {% for category in post.categories %}<span class="post-category">{{ category | capitalize }}</span>{% endfor %}</p>
+    <p class="post-details">Topics:
+      {% for topic in post.topics %}<span class="post-topic">{{ topic | capitalize }}</span>{% endfor %}</p>
     <p>{{ post.excerpt }}</p>
     <p class="more"><a  class="without-underline" href="{{ post.url }}"><svg class="more--icon" viewBox="0 0 157 157" preserveAspectRatio="xMinYMax meet"><use xlink:href="#more"></use></svg> READ MORE</a></p>
     {% unless forloop.last %}<hr>{% endunless %}

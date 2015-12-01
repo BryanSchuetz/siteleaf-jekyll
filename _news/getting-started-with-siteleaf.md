@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Siteleaf
-date: 2015-11-04 08:33:57 -05:00
-categories:
+date: 2015-11-02 08:33:57 -05:00
+topics:
 - Docs
 - Siteleaf
 layout: post
