@@ -5,7 +5,7 @@ title: Home
 
 <div class="home">
   {% assign news = site.news | sort: 'date' | reverse %}
-  {% for post in news %}
+  {% for post in news limit: 1%}
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="post-details">Topics:
       {% for topic in post.topics %}<span class="post-topic">{{ topic | capitalize }}</span>{% endfor %}</p>
