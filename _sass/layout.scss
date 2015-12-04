@@ -1,5 +1,8 @@
 
 // 🎌The Grid 🎌
+.page-content img{
+  width: 100%;
+}
 .big-wrap{
   padding: 2rem;
   @include min-width(3.5);

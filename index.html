@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Home
+topics:
+- Siteleaf
+- Jekyll
 ---
 
 <div class="home">
@@ -13,6 +16,6 @@ title: Home
     {% unless forloop.last %}<hr>{% endunless %}
   {% endfor %}
   <hr>
-  <h3>Theoretically Related Content</h3>
+{% include related.html %}
 
 </div>
