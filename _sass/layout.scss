@@ -1,5 +1,8 @@
 
 // 🎌The Grid 🎌
+.page-content img{
+  width: 100%;
+}
 .big-wrap{
   padding: 2rem;
   @include min-width(3.5);
@@ -33,4 +36,66 @@
     float: left;
     margin-right: 1rem;
   }
+}
+// 🎌Content🎌
+.more{
+  text-align: right;
+}
+.more--icon{
+  height: 1rem;
+  position: relative;
+  top: .14rem;
+}
+// 🎌The Footer🎌
+.colophon{
+  text-align: center;
+   img{
+  height: 2rem;
+  position: relative;
+  top: 10px;
+  }
+}
+// 🎌Pagination🎌
+.pagination{
+  margin: 4rem auto 1rem auto;
+  font-family: 'Archivo Narrow';
+  padding: .5rem;
+  background-color: lighten($gray, 30%);
+  span, a{
+    display: inline-block;
+    padding: 1rem 1rem;
+    @include responsive(medium-screens){
+      padding: 1rem 2rem;
+    }
+    text-align: center;
+    text-decoration: none;
+    border-radius: .2rem;
+  }
+}
+.pagination a{
+  border: 2px solid $blue;
+  a:hover{
+    border: 2px solid darken($blue, 10%);
+  }
+}
+.pagination span{
+  border: 2px solid black;
+}
+.previous{
+float: right;
+}
+.next{
+  float: left;
+}
+.page_number{
+  text-align: center;
+  margin-top: .5rem;
+  font-family: 'Archivo Narrow';
+}
+// 🎌Footer🎌
+
+footer{
+  margin-top: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

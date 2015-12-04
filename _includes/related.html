@@ -1,0 +1,14 @@
+<h3>Theoretically Related Content:</h3>
+<ul>
+  {% assign news = site.news | sort: 'date' | reverse %}
+  {% for post in news | offset:1 %}
+    {% if post.url != page.url %}
+      {% for tag in page.topics %}
+        {% if post.topics contains tag %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ul>

@@ -1,23 +1,21 @@
 ---
 layout: default
+title: Home
+topics:
+- Siteleaf
+- Jekyll
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% assign news = site.news | sort: 'date' | reverse | limit: 1%}
+  {% for post in news limit: 1%}
+  <h1 class="post-title">{{ post.title }}</h1>
+    <p class="post-details">Topics:
+      {% for topic in post.topics %}<span class="post-topic">{{ topic | capitalize }}</span>{% endfor %}</p>
+    <p>{{ post.excerpt }}</p>
+    {% unless forloop.last %}<hr>{% endunless %}
+  {% endfor %}
+  <hr>
+{% include related.html %}
 
 </div>

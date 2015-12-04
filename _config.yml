@@ -1,16 +1,30 @@
 ---
-title: Placeholder Title
+title: Siteleaf/Jekyll
 url: http://siteleaf-jekyll.siteleaf.net
 timezone: America/New_York
 collections:
+  news:
+    title: News
+    output: true
   uploads:
     title: Uploads
     output: true
+gems:
+- jekyll-paginate
+paginate: 3
+paginate_path: "/page:num/"
+hilighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+excerpt_separator: "<!--more-->"
 email: your-email@domain.com
+exclude:
+- ".gitignore"
 description: |
-  Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  Write an awesome description for your new site here.
 baseurl: 
 destination: "./build"
 sass:
   style: compressed
-markdown: kramdown
