@@ -20,20 +20,6 @@ Speaking of point and click, [this site](https://github.com/BryanSchuetz/sitelea
 
 It's a simple fixed-width, adaptive blog template. It's fixed-width because I hate fluid layouts. It's adaptive because **_mobile_**. The grid is controlled by a couple of small [Sass](http://sass-lang.com) mixins. Basically, you set the width of your columns and gutters, center the grid on the viewport, and let the column count be determined by whatever breakpoints make sense given the content. That's it, mostly...
 
-``` sass
-$font-size: 16px; // Your base font-size in pixels
-$em: $font-size / 1em; // Shorthand for outputting ems
-$column: 48px;	// The column-width of your grid in pixels
-$gutter: 24px;	// The gutter-width of your grid in pixels
-
-@mixin width ($cols:1) {
-	width: ($cols * ($column + $gutter) - $gutter) / $em;
-}
-@mixin min-width ($cols:1) {
-	width: ($cols * ($column + $gutter) - $gutter) / $em;
-}
-```
-
 **Not that you really have to worry about any of that though.** I've already setup the grid and breakpoints as seemed appropriate for a blog type site.
 
 If you just want to use this theme 'as is' then go through the minimal [setup](/setup/) to get the theme up and running with Siteleaf, and start writing! Not sure what I'm talking [about](/about/)?
