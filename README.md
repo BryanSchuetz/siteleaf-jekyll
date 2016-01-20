@@ -5,3 +5,5 @@
 Speaking of point and click, [this site](https://github.com/BryanSchuetz/siteleaf-jekyll) is a freebie starter theme to help you quickly get started with Siteleaf and Jekyll. Use it as a starting point for your own customizations, or just change the title and use it as is, or ignore it altogether.
 
 It's a simple fixed-width, adaptive blog template. It's fixed-width because I hate fluid layouts. It's adaptive because **_mobile_**. The grid is controlled by a couple of small [Sass](http://sass-lang.com) mixins. Basically, you set the width of your columns and gutters, center the grid on the viewport, and let the column count be determined by whatever breakpoints make sense given the content. That's it, mostly...
+
+There's a couple other odds and ends you'll run into, like using Gulp as a task runner for invoking Browsersync and compressing images.
